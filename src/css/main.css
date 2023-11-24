@@ -1,0 +1,124 @@
+@import url(root.css);
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ___HOME___ */
+header{
+    display: flex;
+    justify-content: center;
+    height: 102px;
+}
+header img{
+    width: 5rem;
+    height: 5.4375rem;
+    flex-shrink: 0; 
+}
+section.home{
+    /* width: 100vw; */
+    height: 100vh;
+    background: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-de-fundo);
+    row-gap: 20px;
+}
+
+.home h1{
+    font-weight: bold;
+    font-size: 3rem; 
+    line-height: 104.5%; /* 3.135rem */
+    text-transform: uppercase; 
+    padding-bottom: 40px;
+}
+.home h1 span{
+    display: block;
+    font-size: 32px; 
+    letter-spacing: 22.4px;
+}
+.home h2{
+    font-size: 37px; 
+    
+}
+.home p{
+    width: 520px;
+    text-align: center;
+}
+.home .servicos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.home .servicos .servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+.home .servicos .servico img{
+    width: 40%;
+}
+.contate{
+    background-color: var(--cor-de-fundo-secundaria);
+    padding: 15px 60px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-de-fundo);
+    border: solid 1px var(--cor-de-fundo);
+}
+
+/* ___SOBRE___ */
+section.sobre{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    row-gap: 40px;
+}
+section.sobre .conteudos{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+}
+section.sobre .conteudos .conteudo{
+   width: 50%; 
+}
+section.sobre .conteudos .conteudo:first-child{
+    background-color: var(--cor-de-fundo-secundaria);
+    border-radius: 40px 0 0 40px;
+    padding: 40px;    
+    color: var(--cor-de-fundo);
+}
+section.sobre .conteudos .conteudo:first-child h3{
+    font-size: 32px;
+}
+section.sobre .conteudos .conteudo:first-child p{
+    color: var(--texto);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+section.sobre .conteudos .conteudo:nth-child(2){
+    background-image: url(../img/trabalhador.png);
+    background-position:initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 40px 40px 0;
+}
+section.sobre .conteudos .conteudo ul{
+    list-style: none;
+}
+section.sobre .conteudos .conteudo ul li::before{
+    content: url(../img/check.svg);
+    padding-right: 8px;
+}
